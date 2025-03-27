@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <style>
+    body {
+      font-family: 'Arial','sans-serif';
+      margin-top: 120px;
+      text-align: center;
+      background-color: #081534; /*Adicionei azul marinho*/
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: aliceblue;
+    }
+
+    #nova-tarefa {
+      width: 300px;
+      padding: 8px;
+      border: aliceblue; /*Alterei todas as fontes para "aliceblue" para constratar com o azul*/
+      border-radius: 5px;
+    }
+
+    #adicionar {
+      padding: 8px 12px;
+      margin-left: 5px;
+      border: aliceblue;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: aliceblue;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 8px;
+      margin-left: 73px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: aliceblue;
+      width: 500px; /*Defini um tamanho fixo de botão*/
+    }
+
+    .done {
+      user-select: none; /*Coloquei isso para o cursor não selecionar a palavra.*/
+      text-decoration: line-through;
+      color: brown;
+    }
+
+    .remover {
+      margin-left: 10px;
+      padding: 4px 8px;
+      background-color: brown;
+      color: aliceblue;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none; /*Para o cursor não selecionar "remover"*/
+    }
+
+    .remover:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lista de Tarefas</h1>
+  <input type="text" id="nova-tarefa" placeholder="Adicione uma tarefa">
+  <button id="adicionar">Adicionar</button>
+
+  <ul id="lista-tarefas"></ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
