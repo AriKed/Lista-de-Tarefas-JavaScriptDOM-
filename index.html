@@ -49,12 +49,13 @@
       justify-content: space-between;
       align-items: center;
       background-color: aliceblue;
-      width: 500px; /*Defini um tamanho fixo de botão*/
+      width: 500px; /*Defini um tamanho fixo do espaço onde as tarefas ficarão*/
     }
 
+    /*Classe "done" quando um usuário der duplo clique em cima de uma tarefa*/
     .done {
       user-select: none; /*Coloquei isso para o cursor não selecionar a palavra.*/
-      text-decoration: line-through;
+      text-decoration: line-through; /*Risca a frase/palavra, sem isto a frase ficaria apenas da cor "Brown"*/
       color: brown;
     }
 
@@ -66,7 +67,7 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      user-select: none; /*Para o cursor não selecionar "remover"*/
+      user-select: none; /*Para o cursor não selecionar "Remover"*/
     }
 
     .remover:hover {
